@@ -1,0 +1,6 @@
+on chat:
+	if player is op:
+		stop
+	else:
+		cancel event
+		send "&cA csevegés jelenleg kivan kapcsolva." to player
