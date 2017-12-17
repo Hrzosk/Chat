@@ -2,10 +2,10 @@ command /chat [<text>]:
 	permission: skript.chat
 	permission message: &cJelenleg nincs elég jogosultságod ehhez!
 	trigger:
-		if arg-1 is not "on" or "off" or "clear" or "reload":
+		if arg-1 is not "on" or "off" or "clear" or "reload" or "info":
 			send "&cNincs ilyen nevű mód." to player
 		if arg-1 is not set:
-			send "&7Használd így: &a/chat <on/off/clear/reload>" to player
+			send "&7Használd így: &a/chat <on/off/clear/reload/info>" to player
 		if arg-1 is "on":
 			execute console command "/sk enable chatmessage"
 			send "&aSikeresen aktiváltad a Chatet." to player
@@ -16,6 +16,13 @@ command /chat [<text>]:
 			execute console command "/sk reload chat"
 			execute console command "/sk reload chatmessage"
 			send "&aSikeresen reloadoltad a Chatet." to player
+		if arg-1 is "info":
+			send " " to player
+			send "&aPlugin Információk:" to player
+			send " " to player
+			send "&7A plugin fejlesztője: &aHrzosk" to player
+			send "&7A plugin jelenlegi verziója: &a1.0" to player
+			send " " to player
 		if arg-1 is "clear":
 			broadcast " "
 			broadcast " "
