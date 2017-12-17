@@ -1,4 +1,4 @@
-asználat:
+Használat:
 	
 	1. Töltsd fel a szervered plugins mappájába a Skript plugint. (https://dev.bukkit.org/projects/skript)
 	2. Reloadold a szerveredet. (/reload)
