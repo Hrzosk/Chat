@@ -15,7 +15,7 @@ command /chat [<text>]:
 		if arg-1 is "reload":
 			execute console command "/sk reload chat"
 			execute console command "/sk reload chatmessage"
-			send "&aSikeresen reloadoltad a Chatet." to player
+			send "&aSikeresen reloadoltad a plugint." to player
 		if arg-1 is "info":
 			send " " to player
 			send "&aPlugin Információk:" to player
